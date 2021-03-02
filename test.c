@@ -53,4 +53,26 @@ int output(int a[], int n)
 	}
 	return 0;
 }
-
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<Windows.h>
+int main()
+{
+	char a1[100] = "hello bit!!!!!!!!!!!!!!!";
+	char a2[100] = "~~~~~~~~~~~~~~~~~~~~~~~~";
+	int sz = strlen(a1) - 1;
+	int left = 0;
+	int right = sz - 1;
+	while (left <= right)
+	{
+		a2[left] = a1[left];
+		a2[right] = a1[right];
+		printf("%s\n", a2);
+		left++;
+		right--;
+		Sleep(1000);
+		system("cls");
+	}
+	return 0;
+}
